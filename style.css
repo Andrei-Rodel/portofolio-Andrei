@@ -372,3 +372,36 @@ body{
     border-radius: 16px;
   }
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Botão CV */
+.btn.ghost{
+  border: 1px solid rgba(0, 212, 255, 0.35);
+  color: var(--primary);
+  background: rgba(0, 212, 255, 0.08);
+}
+
+.btn.ghost:hover{
+  transform: translateY(-2px);
+  border-color: rgba(0, 212, 255, 0.7);
+}
+
+/* Melhorando a foto (mais nítida) */
+.avatar-img{
+  filter: contrast(1.05) brightness(1.05);
+}
+
+/* ANIMAÇÃO REVEAL */
+.reveal{
+  opacity: 0;
+  transform: translateY(18px);
+  transition: 0.6s ease;
+}
+
+.reveal.show{
+  opacity: 1;
+  transform: translateY(0);
+}
