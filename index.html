@@ -1,217 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Andrei Rodel</title>
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">Andrei<span>.</span></h1>
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Andrei<span>.</span></h1>
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
 
-      <nav class="nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
+<section class="hero">
+  <div class="container hero-grid">
 
-      <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="hero-text">
+      <h2>Olá, eu sou <span>Andrei Rodel</span> 👋</h2>
+      <p>Desenvolvedor Frontend em evolução, criando projetos reais com HTML, CSS e JavaScript.</p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="#projetos">Ver Projetos</a>
+        <a class="btn outline" href="#contato">Contato</a>
+        <a class="btn ghost" href="./assets/curriculo.pdf" download>📄 Baixar CV</a>
+      </div>
+
+      <div class="badges">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Frontend</span>
+      </div>
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
+    <div class="hero-card">
+      <div class="profile">
+        <img src="./assets/perfil.jpeg" class="avatar-img" alt="Foto Andrei">
+        <h3>Andrei Rodel</h3>
+        <p>Dev em formação</p>
 
-      <div class="hero-text">
-        <h2>Olá, eu sou <span>Andrei Rodel</span> 👋</h2>
-        <p>
-          Desenvolvedor em evolução 🚀  
-          Eu crio sites e sistemas modernos com foco em performance, design e experiência do usuário.
-        </p>
-
-        <div class="hero-buttons">
-          <a class="btn primary" href="#projetos">Ver Projetos</a>
-          <a class="btn outline" href="#contato">Falar comigo</a>
-          <a class="btn ghost" href="./assets/curriculo.pdf" download>📄 Baixar CV</a>
+        <div class="mini-info">
+          <div><strong>4+</strong><small>Projetos</small></div>
+          <div><strong>100%</strong><small>Prática</small></div>
+          <div><strong>2026</strong><small>Evolução</small></div>
         </div>
+      </div>
+    </div>
 
-        <div class="badges">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Frontend</span>
+  </div>
+</section>
+
+<section class="section" id="projetos">
+  <div class="container">
+    <h2 class="title">Projetos</h2>
+
+    <div class="projects-grid">
+      <div class="card reveal">
+        <h3>🛼 Patins Animado</h3>
+        <p>Projeto com animações e layout criativo.</p>
+        <div class="card-buttons">
+          <a class="btn primary" href="https://andrei-rodel.github.io/patins-animado/" target="_blank">Ver Site</a>
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="profile">
-          <img class="avatar-img" src="./assets/perfil.jpeg" alt="Foto do Andrei Rodel">
-
-          <h3>Andrei Rodel</h3>
-          <p>Dev Fullstack (em formação)</p>
-
-          <div class="mini-info">
-            <div>
-              <strong>+4</strong>
-              <small>Projetos</small>
-            </div>
-            <div>
-              <strong>100%</strong>
-              <small>Foco</small>
-            </div>
-            <div>
-              <strong>2026</strong>
-              <small>Evolução</small>
-            </div>
-          </div>
+      <div class="card reveal">
+        <h3>🏍️ AEL Motos</h3>
+        <p>Site profissional para oficina.</p>
+        <div class="card-buttons">
+          <a class="btn primary" href="https://aelmotos.netlify.app/" target="_blank">Ver Site</a>
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section class="section" id="sobre">
-    <div class="container">
-      <h2 class="title">Sobre mim</h2>
-      <p class="subtitle">
-        Um pouco sobre minha jornada na programação.
-      </p>
-
-      <div class="about-box reveal">
-        <p>
-          Sou o <b>Andrei Rodel</b>, desenvolvedor com foco em <b>Frontend</b> e em evolução para Fullstack.
-          Estou sempre praticando com projetos reais, buscando melhorar meu código e criar interfaces modernas e responsivas.
-        </p>
-
-        <ul class="about-list">
-          <li>✅ Sites responsivos</li>
-          <li>✅ Projetos publicados (GitHub Pages / Netlify)</li>
-          <li>✅ HTML, CSS e JavaScript na prática</li>
-          <li>✅ Evoluindo para React e Fullstack</li>
-        </ul>
+      <div class="card reveal">
+        <h3>🎵 Zingem</h3>
+        <p>Projeto moderno publicado no GitHub Pages.</p>
+        <div class="card-buttons">
+          <a class="btn primary" href="https://andrei-rodel.github.io/zingem/" target="_blank">Ver Site</a>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJETOS -->
-  <section class="section" id="projetos">
-    <div class="container">
-      <h2 class="title">Projetos</h2>
-      <p class="subtitle">
-        Alguns projetos que eu construí para praticar e evoluir.
-      </p>
+<!-- CERTIFICADOS -->
+<section class="section" id="certificados">
+  <div class="container">
+    <h2 class="title">Certificados</h2>
+    <p class="subtitle">Cursos que comprovam minha formação prática.</p>
 
-      <div class="projects-grid">
+    <div class="projects-grid">
 
-        <div class="card reveal">
-          <h3>🛼 Patins Animado</h3>
-          <p>Projeto com animação e layout criativo para treinar HTML, CSS e JavaScript.</p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
-          </div>
-
-          <div class="card-buttons">
-            <a class="btn primary" href="https://andrei-rodel.github.io/patins-animado/" target="_blank">Ver Site</a>
-            <a class="btn outline" href="https://github.com/Andrei-Rodel/patins-animado" target="_blank">GitHub</a>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <h3>🏍️ AEL Motos (Oficina)</h3>
-          <p>Site moderno para oficina de motos, com layout profissional e publicado no Netlify.</p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
-          </div>
-
-          <div class="card-buttons">
-            <a class="btn primary" href="https://aelmotos.netlify.app/" target="_blank">Ver Site</a>
-            <a class="btn outline" href="https://github.com/Andrei-Rodel" target="_blank">GitHub</a>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <h3>🎵 Zingem</h3>
-          <p>Projeto publicado no GitHub Pages com layout moderno e interativo.</p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
-          </div>
-
-          <div class="card-buttons">
-            <a class="btn primary" href="https://andrei-rodel.github.io/zingem/" target="_blank">Ver Site</a>
-            <a class="btn outline" href="https://github.com/Andrei-Rodel/zingem" target="_blank">GitHub</a>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <h3>🚀 Próximo Projeto</h3>
-          <p>Em breve mais um projeto completo (CRUD / API / Sistema real).</p>
-
-          <div class="tags">
-            <span>Em breve</span>
-            <span>React</span>
-            <span>Fullstack</span>
-          </div>
-
-          <div class="card-buttons">
-            <a class="btn primary" href="#contato">Me chamar</a>
-            <a class="btn outline" href="https://github.com/Andrei-Rodel" target="_blank">GitHub</a>
-          </div>
-        </div>
-
+      <div class="card reveal">
+        <img src="./certificados/html-css.jpeg" class="cert-img" alt="Certificado HTML CSS">
+        <h3>HTML & CSS</h3>
+        <p>Fundamentos do desenvolvimento web responsivo.</p>
+        <a class="btn primary" href="./certificados/css-html.pdf" target="_blank">Ver Certificado</a>
       </div>
-    </div>
-  </section>
 
-  <!-- CONTATO -->
-  <section class="section" id="contato">
-    <div class="container">
-      <h2 class="title">Contato</h2>
-      <p class="subtitle">Se quiser conversar comigo, me chama!</p>
-
-      <div class="contact-box reveal">
-        <a class="contact-item" href="https://wa.me/5547996871406" target="_blank">
-          📲 WhatsApp: (47) 99687-1406
-        </a>
-
-        <a class="contact-item" href="https://github.com/Andrei-Rodel" target="_blank">
-          💻 github.com/Andrei-Rodel
-        </a>
-
-        <a class="contact-item" href="https://www.linkedin.com/in/andrei-rodel-7aab782b0" target="_blank">
-          🔗 linkedin.com/in/andrei-rodel-7aab782b0
-        </a>
+      <div class="card reveal">
+        <img src="./certificados/javascript.jpeg" class="cert-img" alt="Certificado JavaScript">
+        <h3>JavaScript</h3>
+        <p>JavaScript moderno aplicado em projetos reais.</p>
+        <a class="btn primary" href="./certificados/javascript.pdf" target="_blank">Ver Certificado</a>
       </div>
+
+      <div class="card reveal">
+        <img src="./certificados/git-github.jpeg" class="cert-img" alt="Certificado Git e GitHub">
+        <h3>Git e GitHub</h3>
+        <p>Formação introdutória em git e GitHub</p>
+        <a class="btn primary" href="./certificados/git-github.pdf" target="_blank">Ver Certificado</a>
+      </div>
+
+       <div class="card reveal">
+        <img src="./certificados/python.jpeg" class="cert-img" alt="Certificado Python">
+        <h3>Python</h3>
+        <p>Formação introdutória em Python</p>
+        <a class="btn primary" href="./certificados/python.pdf" target="_blank">Ver Certificado</a>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- BOTÃO WHATSAPP -->
-  <a class="whatsapp" target="_blank"
-     href="https://wa.me/5547996871406?text=Olá%20Andrei!%20Vi%20seu%20portfólio%20e%20quero%20fazer%20um%20site%20ou%20sistema.">
-    💬
-  </a>
+<section class="section" id="contato">
+  <div class="container">
+    <h2 class="title">Contato</h2>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 - Feito por <b>Andrei Rodel</b> 🚀</p>
+    <div class="contact-box reveal">
+      <a class="contact-item" href="https://wa.me/5547996871406" target="_blank">📲 WhatsApp</a>
+      <a class="contact-item" href="https://github.com/Andrei-Rodel" target="_blank">💻 GitHub</a>
+      <a class="contact-item" href="https://linkedin.com/in/andrei-rodel-7aab782b0" target="_blank">🔗 LinkedIn</a>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<footer class="footer">
+  <p>© 2026 • Andrei Rodel</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
