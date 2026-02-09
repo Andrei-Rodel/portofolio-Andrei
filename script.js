@@ -1,15 +1,26 @@
+// MENU MOBILE (toggle)
 const menuBtn = document.getElementById("menuBtn");
 const nav = document.querySelector(".nav");
 
-menuBtn.onclick = () => nav.classList.toggle("active");
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
 
+// SCROLL REVEAL
 const reveals = document.querySelectorAll(".reveal");
-function reveal(){
-  reveals.forEach(el=>{
-    if(el.getBoundingClientRect().top < window.innerHeight - 80){
-      el.classList.add("show");
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach((el) => {
+    const elementTop = el.getBoundingClientRect().top;
+    const visiblePoint = 120;
+
+    if (elementTop < windowHeight - visiblePoint) {
+      el.classList.add("active");
     }
   });
 }
-window.addEventListener("scroll", reveal);
-reveal();
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
